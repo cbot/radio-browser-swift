@@ -1,0 +1,15 @@
+{
+  "originHash" : "3a828ac2993926f461fd65fcadad82086ff2a5c93a4f80ace63305bd680cc422",
+  "pins" : [
+    {
+      "identity" : "swift-async-dns-resolver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-async-dns-resolver",
+      "state" : {
+        "revision" : "08c07ff31a745ee5e522ac10132fb4949834d925",
+        "version" : "0.4.0"
+      }
+    }
+  ],
+  "version" : 3
+}
