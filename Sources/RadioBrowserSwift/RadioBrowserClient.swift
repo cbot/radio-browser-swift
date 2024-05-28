@@ -60,6 +60,14 @@ public actor RadioBrowserClient {
         return try await fetchAndDecode(request: request)
     }
     
+    public func fetchStation(uuid: UUID) async throws -> Station {
+        if let station = try await fetchStations(query: .init(query: uuid.uuidString, queryType: .byUUID)).first {
+            return station
+        } else {
+            throw RadioBrowserError.noSuchStation
+        }
+    }
+    
     public func setSelectedServer(_ server: Server) {
         selectedServer = server
     }
