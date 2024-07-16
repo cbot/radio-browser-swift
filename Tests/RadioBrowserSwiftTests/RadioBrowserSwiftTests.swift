@@ -1,5 +1,5 @@
-import XCTest
 @testable import RadioBrowserSwift
+import XCTest
 
 final class RadioBrowserSwiftTests: XCTestCase {
     func testBasic() async throws {

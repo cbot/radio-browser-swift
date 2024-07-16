@@ -36,7 +36,7 @@ public struct Station: Decodable {
     public let url: String
     public let urlResolved: String
     public let votes: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case bitrate
         case changeUUID = "changeuuid"

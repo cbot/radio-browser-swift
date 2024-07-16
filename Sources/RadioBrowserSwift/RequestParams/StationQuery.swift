@@ -15,14 +15,14 @@ public struct StationQuery {
         case byTag = "bytag"
         case byTagExact = "bytagexact"
     }
-    
+
     public let query: String
     public let queryType: QueryType
-    
+
     var pathComponents: [String] {
         [queryType.rawValue, query]
     }
-    
+
     public init(query: String, queryType: StationQuery.QueryType) {
         self.query = query
         self.queryType = queryType
