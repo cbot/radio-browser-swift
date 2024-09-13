@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Station: Decodable, Sendable {
+public struct Station: Decodable, Sendable, Equatable {
     public let bitrate: Int
     public let changeUUID: UUID
     public let clickCount: Int
@@ -73,5 +73,9 @@ public struct Station: Decodable, Sendable {
         case url
         case urlResolved = "url_resolved"
         case votes
+    }
+    
+    public static func == (lhs: Station, rhs: Station) -> Bool {
+        lhs.stationUUID == rhs.stationUUID
     }
 }
