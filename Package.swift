@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 6.0
 import PackageDescription
 
 let package = Package(
@@ -20,5 +20,6 @@ let package = Package(
             .product(name: "AsyncDNSResolver", package: "swift-async-dns-resolver"),
         ]),
         .testTarget(name: "RadioBrowserSwiftTests", dependencies: ["RadioBrowserSwift"]),
-    ]
+    ],
+    swiftLanguageModes: [.v6]
 )
