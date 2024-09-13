@@ -1,4 +1,4 @@
-public struct Codec: Decodable {
+public struct Codec: Decodable, Sendable {
     public let name: String
     public let stationCount: Int
 

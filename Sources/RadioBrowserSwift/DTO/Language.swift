@@ -1,4 +1,4 @@
-public struct Language: Decodable {
+public struct Language: Decodable, Sendable {
     public let name: String
     public let stationCount: Int
     public let iso639: String?

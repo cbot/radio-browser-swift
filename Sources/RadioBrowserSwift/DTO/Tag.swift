@@ -1,4 +1,4 @@
-public struct Tag: Decodable {
+public struct Tag: Decodable, Sendable {
     public let name: String
     public let stationCount: Int
 

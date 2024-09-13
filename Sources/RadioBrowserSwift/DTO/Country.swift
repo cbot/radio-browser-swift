@@ -1,4 +1,4 @@
-public struct Country: Decodable {
+public struct Country: Decodable, Sendable {
     public let name: String
     public let stationCount: Int
     public let iso31661: String

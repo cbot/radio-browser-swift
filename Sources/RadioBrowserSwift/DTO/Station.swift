@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Station: Decodable {
+public struct Station: Decodable, Sendable {
     public let bitrate: Int
     public let changeUUID: UUID
     public let clickCount: Int
